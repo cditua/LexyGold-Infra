@@ -7,6 +7,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = [var.sg_name]
   key_name               = "prodkeypair"
 
+
   tags = {
     Name = "NetFlix-App-server"
   }
